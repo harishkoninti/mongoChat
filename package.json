@@ -1,0 +1,23 @@
+{
+  "name": "mongochat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harishkoninti/mongoChat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harishkoninti/mongoChat/issues"
+  },
+  "homepage": "https://github.com/harishkoninti/mongoChat#readme",
+  "dependencies": {
+    "mongodb": "^3.6.5",
+    "socket.io": "^4.0.0"
+  }
+}
