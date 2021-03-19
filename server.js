@@ -1,11 +1,14 @@
 const mongo = require('mongodb').MongoClient;
-const server = require('socket.io');
-const io = new server(4000);
-// server.listen(4000);
+// const client = require('socket.io').listen(4000).sockets;
+
+var io = require('socket.io-client')
+var socket = io.connect('http://localhost:8080', {reconnect: true});
+
+
 
 //connecting mongo
 
-mongo.connect('mongodb:127.0.0.1/mongochat',function(err,db){
+mongo.connect('mongodb://127.0.0.1/mongochat',function(err,db){
     if(err){
         throw err;
     }
